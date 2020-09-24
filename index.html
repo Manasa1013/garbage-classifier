@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Garbage classifier using DL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+        
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/f9197d847f.js" crossorigin="anonymous"></script> 
+    <style>
+        body{
+          background-color: #c02b2bab;
+
+
+        }
+        #ui{
+            background-color: white;
+            color:#0B3142 ;
+        }
+        #linkh1{
+          background-color:whitesmoke;
+          color: #0F5257;
+        }
+        #linkhref{
+            font-size: 25px;
+            margin-left: 5px;
+        }
+        #uo{
+          background-color:rgba(223, 56, 111, 0.315);
+          color: #0F5257;
+        }
+        
+    </style>
+    <body>
+        <div class="container-fluid bg-light" id = "div1">
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-brand mb-0 h1">Garbage classifier project</span>
+                <span class ="navbar-brand mb-0 h1" id = "">with Deep learning </span>
+            </nav><br><br>
+            <h1 >Components used</h1>
+                <ul class="list-group">
+                    <li>Laptop or PC with GPU(preferred)</li>
+                    <li>Arduino microcontroller board</li>
+                    <li>Web camera</li>
+                    <li>USB type-A cable</li>
+                    <li>Servo motor(to flip the lid of trash can)</li>
+                    <li>bio and non-bio degradable waste (to demonstrate)</li>
+                    <li>Power supply for arduino board</li>
+
+                </ul>
+                <br>
+                <h1 >Softwares and libraries required</h1>
+                <ul class="list-group">
+                    <li>OpenCV library</li>
+                    <li>Arduino IDE </li>
+                    <li>Tensorflow </li>
+                    <li>Anaconda with jupyter</li>
+                    <li>PyFirmata</li>					
+                    <li>Matplotlib</li>						
+                    <li>Numpy module</li>						
+                    <li>Keras</li>		
+                </ul>
+            
+                <div class="input-group-append">
+                    <h1  id = "linkh1">Watch the project demo <i class="fa fa-arrow-right" aria-hidden="true"></i></h1>
+                     <a href="https://youtu.be/lu3VPakfBtg"><span class ="navbar-brand mb-0 h1" id = "linkhref">  Garbage classifier demo</span></a>
+                    </div><br><br>
+                <div class="input-group-append">
+                    
+                        <h4>Motivation towards problem... of waste segregation</h4>
+                </div> 
+                <p class="jumbotron mt-4 container-fluid background-color">
+                        Huge amount of waste is generated around billions of tons every year but only 30% of waste is recycled.
+                        Waste management has become an urgent need to increase the percentage of waste recycling and reusing.
+                        "Segregation of waste" becomes the first step in waste management.
+                        The existing system employs manual labour to segregate dry waste into metal,plastic and paper.
+                        It is less efficient and a tedious task to separate the amount of generated waste.
+                        Segregating the waste at the source of generation solves the crux of the problem of waste management.
+                </p>
+                <div class="input-group-append">
+                        <h4>Proposed Solution</h4>
+                </div> 
+                <p class="jumbotron mt-4 container-fluid background-color">
+                    The Solution has been designed for effective automatic segregation of waste at the source itself, thereby reducing the physical efforts.
+                    The system is based on concepts of Deep Learning,a subset of artificial intelligence, Image processing, Computer vision and Internet of Things (IoT). 
+                </p>
+                <div class="input-group-append">
+                    <h4>Methodology</h4>
+                </div> 
+                <p class="jumbotron mt-4 container-fluid background-color">
+                    Segregation of waste includes two steps:<br><br>
+                    
+                    Identification : the trash is perfectly identified by the image processing and CNN(convolutional neural network)  algorithms.<br>
+                    Separation : The trash placed on the main flap according to the result from  algorithm falls into respective compartment of the bin.
+                    
+                </p>
+                
+            
+        
+            
+        </div>
+        <div id = "bottomicon" >
+            <center>
+        <!--Instagram-->
+<button type="button" class="btn btn-ins" onclick="insta()"><i class="fab fa-instagram fa-2x" aria-hidden="true" ></i></button>
+<!--Github-->
+<button type="button" class="btn btn-git"onclick= "github()"><i class="fab fa-github fa-2x" ></i></button>
+<!--Email-->
+<button type="button" class="btn btn-email" onclick="mail()"><i class="fas fa-envelope fa-2x" ></i></button>
+                </center>
+    </body>
+    <script>
+        const inst = document.querySelector(".btn btn-ins");
+        function insta(){
+            
+        }
+        const gith = document.querySelector(".btn btn-git");
+        function github(){
+            
+        }
+        const mail = document.querySelector(".btn btn-mail");
+        function mail(){
+            
+        }
+    </script>
+</html>
